@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15sp"
+    android:background="#5FC7F6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="90dp"
+        android:text="SMS App"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editnum"
+        android:drawableLeft="@drawable/baseline_call_24"
+        android:drawablePadding="10dp"
+        android:padding="15sp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Number..."/>
+
+
+    <EditText
+        android:id="@+id/editmes"
+        android:drawableLeft="@drawable/baseline_message_24"
+        android:drawablePadding="10dp"
+        android:padding="15sp"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:lines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message..."/>
+
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:textColor="@color/black"
+        android:backgroundTint="#F44336"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+</LinearLayout>
